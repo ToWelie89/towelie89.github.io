@@ -350,12 +350,13 @@ body {
 }
 #header-inner .socialMedia a {
   text-decoration: none;
-  color: #258fb8;
-  font-size: 30px;
+  color: #61bfe4;
+  font-size: 40px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.71) !important;
 }
 #header-inner .socialMedia a:hover {
   text-decoration: none;
-  color: #5cb4d6;
+  color: #a1def6;
 }
 #banner {
   position: absolute;
@@ -417,6 +418,8 @@ body {
 @media screen and (max-width: 479px) {
   #main-nav {
     background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
 }
 .nav-icon,
@@ -466,6 +469,9 @@ body {
 @media screen and (max-width: 479px) {
   #main-nav-toggle {
     display: block;
+    font-size: 24px;
+    opacity: 1;
+    text-shadow: 0 0 10px #000;
   }
 }
 #sub-nav {
@@ -586,9 +592,63 @@ body {
 a.article-title:hover {
   color: #258fb8;
 }
+#page-galleri .galleryContainer .galleryImage {
+  width: 19%;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  background-size: cover !important;
+  height: 100px;
+  background-position: 50% 50% !important;
+  display: inline-block;
+}
+@media screen and (max-width: 479px) {
+  #page-galleri .galleryContainer .galleryImage {
+    width: 49%;
+  }
+}
+#page-galleri .galleryContainer .galleryImage img {
+  width: 100%;
+  opacity: 0;
+}
+#page-galleri .galleryContainer .galleryImage .caption {
+  display: none;
+}
+#page-om-oss .mapouter {
+  width: 100%;
+}
+#page-om-oss .mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+}
 #page-om-oss .trainer {
   width: 33%;
   float: left;
+}
+@media screen and (max-width: 479px) {
+  #page-om-oss .trainer {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #page-schema table {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  #page-schema table td:last-child,
+  #page-schema table th:last-child {
+    display: none;
+  }
+}
+#page-schema table th {
+  border-bottom: 3px solid #7181b9;
 }
 #page-schema table td {
   width: 14%;
@@ -994,22 +1054,6 @@ a.article-title:hover {
   display: block;
   max-width: 100%;
   margin: 0 auto;
-}
-.galleryContainer .galleryImage {
-  width: 19%;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  background-size: cover !important;
-  height: 100px;
-  background-position: 50% 50% !important;
-  display: inline-block;
-}
-.galleryContainer .galleryImage img {
-  width: 100%;
-  opacity: 0;
-}
-.galleryContainer .galleryImage .caption {
-  display: none;
 }
 #comments {
   background: #fff;
