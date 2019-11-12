@@ -312,6 +312,7 @@ body {
   height: 300px;
   position: relative;
   background: rgba(0,0,0,0.49);
+  overflow: hidden;
 }
 #header:before,
 #header:after {
@@ -379,6 +380,38 @@ body {
   z-index: -1;
   -webkit-box-shadow: 0 0 10px #000;
   box-shadow: 0 0 10px #000;
+}
+#bannerVideo video {
+  width: 100%;
+  position: absolute;
+  margin-top: -18%;
+  opacity: 0.8;
+}
+@media screen and (min-width: 869px) and (max-width: 1088px) {
+  #bannerVideo video {
+    margin-top: -11%;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 868px) {
+  #bannerVideo video {
+    width: 125%;
+    right: -5%;
+    margin-top: -13%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 679px) {
+  #bannerVideo video {
+    width: 175%;
+    right: -5%;
+    margin-top: -18%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #bannerVideo video {
+    width: 236%;
+    right: -55%;
+    margin-top: -25%;
+  }
 }
 #header-title {
   text-align: center;
@@ -449,6 +482,7 @@ body {
   transition: opacity 0.2s;
   display: block;
   padding: 20px 15px;
+  background: none;
 }
 .nav-icon:first-child:hover,
 .main-nav-link:first-child:hover {
@@ -664,32 +698,49 @@ a.article-title:hover {
     padding-top: 10px;
   }
 }
+#page-schema #schemaSwipeInfo {
+  display: none;
+}
+@media screen and (max-width: 479px) {
+  #page-schema #schemaSwipeInfo {
+    display: block;
+    padding: 20px;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 479px) {
+  #page-schema #schemaAdditionalInfo {
+    position: absolute;
+  }
+}
 @media screen and (max-width: 479px) {
   #page-schema .article-entry {
-    padding: 0;
     overflow-x: scroll;
+    padding-left: 0;
   }
 }
 @media screen and (max-width: 479px) {
   #page-schema p {
     padding: 20px;
-    margin-top: -120px;
+    margin-top: -70px;
+    margin-bottom: 140px;
   }
 }
 @media screen and (max-width: 479px) {
   #page-schema table {
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
+    margin-top: 60px;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
   }
-  #page-schema table td:last-child,
-  #page-schema table th:last-child {
-    display: none;
+  #page-schema table td {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 #page-schema table th {
@@ -1210,7 +1261,7 @@ a.article-title:hover {
   height: 2ex;
 }
 #page-nav a {
-  color: #ccc;
+  color: #555;
   text-decoration: none;
 }
 #page-nav a:hover {
