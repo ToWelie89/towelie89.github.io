@@ -1605,4 +1605,7 @@ pre .javascript .function {
   .fancybox-prev span {
     visibility: visible !important;
   }
+  #lingnoiVideo {
+    width: 100%;
+  }
 }
