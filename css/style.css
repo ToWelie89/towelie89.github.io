@@ -117,6 +117,14 @@ button::-moz-focus-inner {
   src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
   src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
+@font-face {
+  font-family: Russo;
+  src: url("RussoOne-Regular.ttf");
+}
+@font-face {
+  font-family: SourceCodePro;
+  src: url("SourceCodePro-VariableFont_wght.ttf");
+}
 html,
 body,
 #container {
@@ -420,7 +428,7 @@ body {
   top: 50%;
   left: 0;
   margin-top: -40px;
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Russo', sans-serif;
 }
 #header-title h2 {
   font-style: italic;
@@ -1335,7 +1343,7 @@ a.article-title:hover {
 }
 .article-entry pre,
 .article-entry code {
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "SourceCodePro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
 .article-entry code {
   background: #eee;
@@ -1397,7 +1405,7 @@ a.article-title:hover {
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "SourceCodePro", Consolas, Monaco, Menlo, Consolas, monospace;
   margin: 0;
 }
 .article-entry .gist .gist-file .gist-data {
