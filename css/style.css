@@ -1162,6 +1162,9 @@ a.article-title:hover {
   max-width: 100%;
   margin: 0 auto;
 }
+.article-entry video {
+  margin-top: 20px;
+}
 .article-entry .automaticGeneratedPostDescription {
   background: #f9f9c8;
   padding: 15px;
