@@ -1162,6 +1162,54 @@ a.article-title:hover {
   max-width: 100%;
   margin: 0 auto;
 }
+.article-entry .automaticGeneratedPostDescription {
+  background: #f9f9c8;
+  padding: 15px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.588);
+  box-shadow: 0 0 10px rgba(0,0,0,0.588);
+}
+.article-entry .postImageContainer {
+  margin-top: 10px !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.article-entry .postImageContainer img {
+  max-width: 85%;
+}
+.article-entry .postCarouselContainer {
+  margin-top: 10px !important;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.article-entry .postCarouselContainer .carouselChild {
+  display: inline-block;
+}
+.article-entry .postCarouselContainer[carousel-children="2"] .carouselChild {
+  width: 48%;
+}
+.article-entry .postCarouselContainer[carousel-children="3"] .carouselChild {
+  width: 32%;
+}
+.article-entry .postCarouselContainer[carousel-children="4"] .carouselChild {
+  width: 48%;
+}
+.article-entry .postCarouselContainer[carousel-children="5"] .carouselChild {
+  width: 48%;
+}
+.article-entry .postCarouselContainer[carousel-children="6"] .carouselChild {
+  width: 32%;
+}
+.article-entry .postCarouselContainer[carousel-children="7"] .carouselChild {
+  width: 32%;
+}
+.article-entry .postCarouselContainer[carousel-children="8"] .carouselChild {
+  width: 24%;
+}
 #comments {
   background: #fff;
   -webkit-box-shadow: 1px 2px 8px #000;
