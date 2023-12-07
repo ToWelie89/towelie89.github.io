@@ -7,15 +7,15 @@
   
   <title>Anmälan vårtermin 2024 | Lejonkulan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;&#x2F;window.location.href &#x3D; &quot;http:&#x2F;&#x2F;stackoverflow.com&quot;;  let currentUrl &#x3D; window.location.href; if (currentUrl.includes(&#39;https&#39;)) {   &#x2F;&#x2F;window.location.href &#x3D; currentUrl.replace(&#39;https&#39;, &#39;http&#39;);   win">
+  <meta name="description" content="&#x2F;&#x2F;window.location.href &#x3D; &quot;http:&#x2F;&#x2F;stackoverflow.com&quot;;   if (window.location.protocol &#x3D;&#x3D; &#39;https:&#39;) {               window.location.href &#x3D;          window.location.href.replace(                  &#39;https">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Anmälan vårtermin 2024">
 <meta property="og:url" content="http://towelie89.github.io/anmalan-vt2024-privat/index.html">
 <meta property="og:site_name" content="Lejonkulan">
-<meta property="og:description" content="&#x2F;&#x2F;window.location.href &#x3D; &quot;http:&#x2F;&#x2F;stackoverflow.com&quot;;  let currentUrl &#x3D; window.location.href; if (currentUrl.includes(&#39;https&#39;)) {   &#x2F;&#x2F;window.location.href &#x3D; currentUrl.replace(&#39;https&#39;, &#39;http&#39;);   win">
+<meta property="og:description" content="&#x2F;&#x2F;window.location.href &#x3D; &quot;http:&#x2F;&#x2F;stackoverflow.com&quot;;   if (window.location.protocol &#x3D;&#x3D; &#39;https:&#39;) {               window.location.href &#x3D;          window.location.href.replace(                  &#39;https">
 <meta property="og:locale">
 <meta property="article:published_time" content="2023-11-26T20:38:11.000Z">
-<meta property="article:modified_time" content="2023-12-07T17:49:21.328Z">
+<meta property="article:modified_time" content="2023-12-07T18:08:03.079Z">
 <meta property="article:author" content="Göteborgs Muay Thai Lejonkulan">
 <meta name="twitter:card" content="summary">
   
@@ -142,10 +142,11 @@
 
 //window.location.href = "http://stackoverflow.com";
 
-let currentUrl = window.location.href;
-if (currentUrl.includes('https')) {
-  //window.location.href = currentUrl.replace('https', 'http');
-  window.location.replace(currentUrl.replace('https', 'http'));
+
+if (window.location.protocol == 'https:') {          
+    window.location.href = 
+        window.location.href.replace( 
+                'https:', 'http:'); 
 }
 
 const endpoint = 'http://sti-starcraft.org:3000/graphql';
@@ -667,7 +668,7 @@ document.addEventListener("DOMContentLoaded", function(){
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://towelie89.github.io/anmalan-vt2024-privat/index.html" data-id="clpvhtl8c0006x4v2cl004t9j" class="article-share-link">Dela</a>
+      <a data-url="http://towelie89.github.io/anmalan-vt2024-privat/index.html" data-id="clpvihhda0004ykv207z8deam" class="article-share-link">Dela</a>
       
         <a href="http://towelie89.github.io/anmalan-vt2024-privat/index.html#disqus_thread" class="article-comment-link">Kommentarer</a>
       
@@ -745,7 +746,7 @@ document.addEventListener("DOMContentLoaded", function(){
 <script>
   var disqus_shortname = 'lejonkulan-1';
   
-  var disqus_url = 'http://towelie89.github.io/anmalan-sommar-2023/index.html';
+  var disqus_url = 'http://towelie89.github.io/anmalan/index.html';
   
   (function(){
     var dsq = document.createElement('script');
